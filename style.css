@@ -1,6 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+
 body {
   background-color: white;
   color: black;
   font-size:15px;
-  font-family: 'Helvetica','Arial';
+  font-family: 'Karla', 'Helvetica','Arial',sans-serif;
+}
+
+table {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: center;
+  vertical-align: center;
+  border: 1px solid black
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
 }
