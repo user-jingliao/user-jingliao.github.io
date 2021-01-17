@@ -2,12 +2,14 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Jing Liao">
     <meta name="description" content="architecture and design portfolio">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jing Liao—Work</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"/>
   </head>
 
@@ -31,19 +33,20 @@
 
     <main>
 
-        <br/><br/><br/><br/>
-<!-- index table projects -->
+    <br/><br/><br/><br/>
 
+<!-- index table projects -->
+      <div class="container-fluid">
         <table class="center table-sortable">
           <caption></caption>
           <thead>
             <tr>
-              <th style="width: 100px; height:30px">when</th>
-              <th>title ☺</th>
-              <th style="width: 100px;">what</th>
-              <th style="width: 150px;">where</th>
-              <th style="width: 100px;">why</th>
-              <th style="width: 200px;">who</th>
+              <th style="width: 10%; height:30px">when</th>
+              <th style="width: 40%">title ☺</th>
+              <th style="width: 10%;">what</th>
+              <th class="d-none d-sm-table-cell" style="width: 15%;">where</th>
+              <th class="d-none d-lg-table-cell" style="width: 10%;">why</th>
+              <th class="d-none d-lg-table-cell" style="width: 15%;">who</th>
             </tr>
           </thead>
           <tbody>
@@ -51,61 +54,61 @@
               <td>2018</td>
               <td><a class="linkedproject" href="./projects/soya-silo-self-storage.html">soya silo self-storage</a></td>
               <td>building</td>
-              <td>toronto, canada</td>
-              <td>academic</td>
-              <td>—</td>
+              <td class="d-none d-sm-table-cell">toronto, canada</td>
+              <td class="d-none d-lg-table-cell">academic</td>
+              <td class="d-none d-lg-table-cell">—</td>
             </tr>
             <tr>
               <td>2020</td>
               <td><a class="linkedproject" href="./projects/swiss-army-house.html">swiss army house</a></td>
               <td>building</td>
-              <td>toronto, canada</td>
-              <td>academic</td>
-              <td>—</td>
+              <td class="d-none d-sm-table-cell">toronto, canada</td>
+              <td class="d-none d-lg-table-cell">academic</td>
+              <td class="d-none d-lg-table-cell">—</td>
             </tr>
             <tr>
               <td>2021</td>
               <td>link</td>
               <td>masterplan</td>
-              <td>toronto, canada</td>
-              <td>competition</td>
-              <td>with T. Huang, K. Huggins</td>
+              <td class="d-none d-sm-table-cell">toronto, canada</td>
+              <td class="d-none d-lg-table-cell">competition</td>
+              <td class="d-none d-lg-table-cell">with T. Huang, K. Huggins</td>
             </tr>
             <tr>
               <td>2019</td>
               <td>palimpsest</td>
               <td>building</td>
-              <td>rome, italy</td>
-              <td>academic</td>
-              <td>with T. Huang</td>
+              <td class="d-none d-sm-table-cell">rome, italy</td>
+              <td class="d-none d-lg-table-cell">academic</td>
+              <td class="d-none d-lg-table-cell">with T. Huang</td>
             </tr>
             <tr>
               <td>2018</td>
               <td>together</td>
               <td>masterplan</td>
-              <td>toronto, canada</td>
-              <td>academic</td>
-              <td>—</td>
+              <td class="d-none d-sm-table-cell">toronto, canada</td>
+              <td class="d-none d-lg-table-cell">academic</td>
+              <td class="d-none d-lg-table-cell">—</td>
             </tr>
             <tr>
               <td>2020</td>
               <td>chair for René Magritte</td>
               <td>furniture</td>
-              <td>—</td>
-              <td>academic</td>
-              <td>with M. Chen</td>
+              <td class="d-none d-sm-table-cell">—</td>
+              <td class="d-none d-lg-table-cell">academic</td>
+              <td class="d-none d-lg-table-cell">with M. Chen</td>
             </tr>
             <tr>
               <td>2015</td>
               <td>floating library</td>
               <td>building</td>
-              <td>toronto, canada</td>
-              <td>academic</td>
-              <td>—</td>
+              <td class="d-none d-sm-table-cell">toronto, canada</td>
+              <td class="d-none d-lg-table-cell">academic</td>
+              <td class="d-none d-lg-table-cell">—</td>
             </tr>
           </tbody>
         </table>
-
+      </div>
 
       </div>
     </main>
@@ -119,6 +122,8 @@
   </body>
 
   <script src="./js/jquery-3.5.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="script.js"></script>
 
 </html>
