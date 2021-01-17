@@ -7,10 +7,42 @@ body {
   font-family: 'Karla', 'Helvetica','Arial',sans-serif;
 }
 
-table {
-  width: 100%;
-  border: 1px solid black;
-  border-collapse: collapse;
+a:hover {
+  -webkit-transition: color 10s;
+  transition: color 0.2s;
+  color: lime;
+  text-decoration: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid currentcolor;
+}
+
+a:active {
+  color: hotpink;
+}
+
+.linkedproject {
+  color: deeppink;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: none;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.myDIV:hover + .hide {
+  display: block;
+  color: black;
 }
 
 th, td {
@@ -20,7 +52,43 @@ th, td {
   border: 1px solid black
 }
 
+th:hover {
+  -webkit-transition: color 0.2s;
+  transition: color 0.2;
+  color: lime;
+}
+
+table {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
 table.center {
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+.table-sortable th {
+  cursor: pointer;
+}
+
+.table-sortable .th-sort-asc::after {
+  content: "\25b4";
+}
+
+.table-sortable .th-sort-desc::after {
+  content: "\25be";
+}
+
+.table-sortable .th-sort-asc::after,
+.table-sortable .th-sort-desc::after {
+  margin-left: 0px;
+}
+
+.table-sortable .th-sort-asc,
+.table-sortable .th-sort-desc {
+  color: lime;
 }
