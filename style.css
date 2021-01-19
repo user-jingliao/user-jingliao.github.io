@@ -1,12 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
 
+html {
+  height: 100%
+}
 
 body {
   background-color: white;
   color: black;
   font-size:15px;
   font-family: 'Karla', 'Helvetica','Arial',sans-serif;
+  height: 100%;
 }
+
+main {
+  min-height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* these push the footer to the bottom */
+
+.main-container {
+  min-height: 100%;
+}
+
+.main {
+  width: 90%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  padding-bottom: 50px;
+}
+
+.footer {
+  background-color: lime;
+  position: relative;
+  height: 50px;
+  margin-top: -50px;
+  clear: both;
+}
+
+/* these push the footer to the bottom */
 
 a:hover {
   -webkit-transition: color 10s;
@@ -46,7 +86,22 @@ a:active {
   color: black;
 }
 
-th, td {
+.navbar-nav {
+  list-style: none;
+}
+
+tr:hover {
+  background-color: lime;
+}
+
+th {
+  padding: 0.75rem;
+  text-align: center;
+  vertical-align: center;
+  border: 1px solid black
+}
+
+td {
   padding: 0.5rem;
   text-align: center;
   vertical-align: center;
@@ -66,7 +121,6 @@ table {
 }
 
 table.center {
-  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -86,7 +140,7 @@ table.center {
 
 .table-sortable .th-sort-asc::after,
 .table-sortable .th-sort-desc::after {
-  margin-left: 0px;
+  margin-left: auto;
 }
 
 .table-sortable .th-sort-asc,
